@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Banatiga Chatbot</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">B</span><span>Banatiga Chatbot</span></div>
+      <button id="new-chat" class="new-chat">＋ New chat</button>
+      <p class="sidebar-label">Recent chats</p>
+      <div id="history" class="history"></div>
+      <div class="sidebar-foot">Your AI chat assistant</div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button id="menu" class="icon-button" aria-label="Open menu">☰</button>
+        <span>Banatiga Chatbot</span>
+        <span class="status"><i></i> Ready</span>
+      </header>
+      <section id="messages" class="messages" aria-live="polite">
+        <div class="welcome" id="welcome">
+          <div class="welcome-logo">B</div>
+          <h1>How can I help you today?</h1>
+          <p>Ask a question, explore an idea, or get help with a task.</p>
+          <div class="suggestions">
+            <button data-prompt="Help me make a simple study plan">Help me make a study plan</button>
+            <button data-prompt="Explain a difficult topic in simple words">Explain something simply</button>
+            <button data-prompt="Give me ideas for a small business">Brainstorm ideas</button>
+          </div>
+        </div>
+      </section>
+      <form id="chat-form" class="composer">
+        <textarea id="message-input" rows="1" placeholder="Message Banatiga..." aria-label="Your message" required></textarea>
+        <button id="send" type="submit" aria-label="Send message">↑</button>
+        <div class="composer-note">AI can make mistakes. Check important information.</div>
+      </form>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
